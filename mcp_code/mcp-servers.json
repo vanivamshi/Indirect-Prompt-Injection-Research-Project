@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "google": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-google"],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+        "GOOGLE_CSE_ID": "${GOOGLE_CSE_ID}"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
+        "SLACK_APP_TOKEN": "${SLACK_APP_TOKEN}",
+        "SLACK_SIGNING_SECRET": "${SLACK_SIGNING_SECRET}"
+      }
+    },
+    "maps": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-maps"],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+      }
+    },
+    "calendar": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-google-calendar"],
+      "env": {
+        "GOOGLE_ACCESS_TOKEN": "${GOOGLE_ACCESS_TOKEN}"
+      }
+    },
+    "gmail": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-gmail"],
+      "env": {
+        "GOOGLE_ACCESS_TOKEN": "${GOOGLE_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
