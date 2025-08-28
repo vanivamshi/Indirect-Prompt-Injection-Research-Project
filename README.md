@@ -1,4 +1,4 @@
-This project, built on the Model Context Protocol (MCP), is designed to explore and mitigate a critical security vulnerability: indirect prompt injection.
+This project, built on the Model Context Protocol (MCP), is designed to explore and mitigate indirect prompt injection. This is the first version of the code in this on going project.
 
 Indirect prompt injection is a cybersecurity threat where an attacker manipulates a large language model (LLM) by embedding malicious instructions in data that the LLM is expected to process from a third-party source.
 
